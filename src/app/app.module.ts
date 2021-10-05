@@ -11,12 +11,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CategoryService } from '../services/domain/category.service';
 import { ErrorInterceptorProvider } from '../interceptors/error-interceptor';
+import { AuthService } from '../services/auth.service';
 
 @NgModule({
   declarations: [
-    MyApp,
-    
-    
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -25,9 +24,7 @@ import { ErrorInterceptorProvider } from '../interceptors/error-interceptor';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    
-    
+    MyApp
   ],
   providers: [
     StatusBar,
@@ -35,6 +32,7 @@ import { ErrorInterceptorProvider } from '../interceptors/error-interceptor';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CategoryService,
     ErrorInterceptorProvider,
+    AuthService
   ]
 })
 export class AppModule {}
