@@ -7,12 +7,12 @@
   <form>
     <ion-item>
       <ion-label>Email</ion-label>
-      <ion-input type = "text"></ion-input>
+      <ion-input [(ngModel)] = "creds.email" name ="email" type = "text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Password</ion-label>
-      <ion-input type = "Password"></ion-input>
+      <ion-input [(ngModel)] = "creds.password" name ="password" type = "Password"></ion-input>
     </ion-item>
 
     <button ion-button block (click) = login()>LOGIN</button>
