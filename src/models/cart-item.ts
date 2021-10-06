@@ -1,4 +1,4 @@
-import { ProductDTO } from "../../models/product.dto";
+import { ProductDTO } from "./product.dto";
 
 export interface CartItem {
     quantity: number,
