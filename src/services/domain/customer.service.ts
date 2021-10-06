@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Rx";
 import { API_CONFIG } from "../../config/api.config";
 import { CustomerDTO } from "../../models/customer.dto";
-import { StorageService } from "../storatge.service";
+import { StorageService } from "../storage.service";
 
 
 @Injectable()

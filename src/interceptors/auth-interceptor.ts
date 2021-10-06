@@ -3,7 +3,7 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HTTP_INTERCEPTORS
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Rx";
 import { API_CONFIG } from "../config/api.config";
-import { StorageService } from "../services/storatge.service";
+import { StorageService } from "../services/storage.service";
 
 
 @Injectable()

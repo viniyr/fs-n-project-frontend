@@ -4,7 +4,7 @@ import { Injectable } from "@angular/core";
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
 import { Observable } from "rxjs/Rx";
 import { FieldMessage } from "../models/fieldmessage";
-import { StorageService } from "../services/storatge.service";
+import { StorageService } from "../services/storage.service";
 
 
 @Injectable()
