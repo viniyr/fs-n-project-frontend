@@ -24,7 +24,7 @@
         <img [src]="item.imageUrl || 'assets/imgs/prod.jpg'">
       </ion-thumbnail>
       <h2>{{item.name}}</h2>
-      <p>{{item.price | currency}}</p>
+      <p>{{item.price | currency:'BRL'}}</p>
     </button>
   </ion-list>
 

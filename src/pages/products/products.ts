@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { API_CONFIG } from '../../config/api.config';
-import { ProductDTO } from '../../models/prodcut.dto';
+import { ProductDTO } from '../../models/product.dto';
 import { ProductService } from '../../services/domain/product.service';
 
 @IonicPage()
@@ -40,7 +40,7 @@ export class ProductsPage {
     }
   }
 
-  showDetail() { 
-    this.navCtrl.push('ProductDetailPage')
+  showDetail(product_id : string) { 
+    this.navCtrl.push('ProductDetailPage', {product_id : product_id});
   }
 }
