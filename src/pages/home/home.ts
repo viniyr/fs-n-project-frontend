@@ -37,6 +37,7 @@ export class HomePage {
     },
     error => {});
   }
+
   login() { 
     this.auth.authenticate(this.creds)
     .subscribe(response => { 
@@ -45,6 +46,10 @@ export class HomePage {
     },
     error => {});
     
+  }
+
+  signup() { 
+    this.navCtrl.push('SignupPage');
   }
 
 }
