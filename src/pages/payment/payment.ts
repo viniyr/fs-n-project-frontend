@@ -22,7 +22,7 @@ export class PaymentPage {
     public formBuilder: FormBuilder) {
 
     this.order = this.navParams.get('order');
-
+      console.log(this.order);
     this.formGroup = this.formBuilder.group({
       installments: [1, Validators.required],
       "@type": ["cardPayment", Validators.required]
@@ -31,7 +31,6 @@ export class PaymentPage {
 
   nextPage() {
     this.order.payment = this.formGroup.value;
-    console.log(this.order);
+    this.navCtrl.setRoot('OrderConfirmationPage', {order: this.order});
   }
-
 }
